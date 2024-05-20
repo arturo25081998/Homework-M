@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  color: white;
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-color: hsl(226, 43%, 10%);
+  padding: 1rem;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card-profile {
+  background-color: hsl(235, 46%, 20%);
+  width: calc(100vw - 2rem);
+  border-radius: 1rem;
+}
+
+.card-profile .profile {
+  padding: 1rem;
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  align-items: center;
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 1rem;
+}
+
+.profile-image {
+  width: 85px;
+  border: 0.2rem solid white;
+  border-radius: 100%;
+}
+
+.profile p {
+  color: #dae0de;
+  margin-bottom: 0.2rem;
+  font-size: 16px;
+}
+
+.profile h2 {
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.card-profile .category {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 1rem;
+  align-items: center;
+}
+
+.card-profile .category button {
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  color: gray;
+}
+
+.card-item {
+  border-radius: 1rem;
+  width: calc(100vw - 2rem);
+  padding-top: 2.5rem;
+}
+
+.card-item .card-data {
+  border-radius: 1rem;
+  background-color: hsl(235, 46%, 20%);
+  padding: 1.5rem;
+}
+
+.card-item .card-data .data-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-item .card-data h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+.card-item .card-data .hrs {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.card-item .card-data button {
+  font-size: 2.5rem;
+  background-color: transparent;
+  border: none;
+}
+
+.card-item .card-data a {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.active {
+  color: white !important;
+}
+
+.card-item.work {
+  background-color: hsl(15, 100%, 70%);
+}
+
+.card-item.play {
+  background-color: hsl(195, 74%, 62%);
+}
+
+.card-item.self-care {
+  background-color: hsl(43, 84%, 65%);
+}
+
+.card-item.exercise {
+  background-color: hsl(145, 58%, 55%);
+}
+
+.card-item.study {
+  background-color: hsl(348, 100%, 68%);
+}
+
+.card-item.social {
+  background-color: hsl(264, 64%, 52%);
+}
