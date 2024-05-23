@@ -77,6 +77,10 @@ body {
   justify-content: end;
   flex-direction: column;
   align-items: end;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 3rem;
+  padding-top: 2rem;
 }
 
 .card-item .card-data {
@@ -118,26 +122,36 @@ body {
 
 .card-item.work {
   background-color: hsl(15, 100%, 70%);
+  background-image: url('../img/icon-work.svg');
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 3rem;
 }
 
 .card-item.play {
   background-color: hsl(195, 74%, 62%);
+  background-image: url('../img/icon-play.svg');
+ 
 }
 
 .card-item.self-care {
   background-color: hsl(43, 84%, 65%);
+  background-image: url('../img/icon-self-care.svg');
 }
 
 .card-item.exercise {
   background-color: hsl(145, 58%, 55%);
+  background-image: url('../img/icon-exercise.svg');
 }
 
 .card-item.study {
   background-color: hsl(348, 100%, 68%);
+  background-image: url('../img/icon-study.svg');
 }
 
 .card-item.social {
   background-color: hsl(264, 64%, 52%);
+  background-image: url('../img/icon-social.svg');
 }
 .cards-wrapper {
   display: flex;
@@ -240,3 +254,4 @@ body {
     align-items: end;
   }
 }
+
