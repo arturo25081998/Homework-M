@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: hsl(234, 12%, 34%);
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.alg-c{
+    text-align: center;
+}
+
+.section-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+    &__title{
+        align-items: center;
+        margin-top: 5rem; 
+        display: flex;
+        flex-direction: column;
+        gap: 0.0rem;
+        &--lighter{
+            font-weight: lighter;
+            font-size: 1.7rem;
+            color: hsl(234, 12%, 34%);
+        } 
+        &--bolder{
+            font-weight: bolder;
+            font-size: 1.7rem;
+            margin-top: 0rem;
+            color: hsl(234, 12%, 34%);
+        }
+        &--text{
+            margin-top: 1.5rem;
+            font-size: 1.3rem;
+            color: hsl(229, 6%, 66%);
+        }    
+    }
+    &__cards{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 5rem;
+    }
+}
+
+.card-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: right;
+    &__card{
+        padding: 2rem;
+        border-top: #333 solid 0.4rem;
+        border-radius: 0.5rem;
+        box-shadow: #333;
+        box-shadow: 0rem 0.3rem 1.5rem 1px hsl(229, 6%, 66%);
+        &--supervisor{
+            border-color: hsl(180, 62%, 55%);
+        }
+        &--team{
+            border-color: hsl(0, 78%, 62%);
+        }
+        &--karma{
+            border-color: hsl(34, 97%, 64%);
+        }
+        &--calculator{
+            border-color: hsl(212, 86%, 64%);
+        }
+        & h3{
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            text-align: left;
+        }
+        & p{
+            color: hsl(229, 6%, 66%);
+            text-align: left;
+        }
+        & img{
+            width: 70px;
+            margin-top: 3rem;
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 768px) {
+    .section-wrapper{
+        &__cards{
+            display: flex;
+            flex-direction: row;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            justify-content: space-between
+        }
+    }
+    .card-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &__card{
+            width: 400px;
+        }
+    }
+}
